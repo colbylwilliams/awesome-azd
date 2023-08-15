@@ -12,7 +12,7 @@ metadata:
   name: awesome-azd
 spec:
   memberOf:
-  - awesome-azd
+    - awesome-azd
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -20,7 +20,8 @@ metadata:
   name: app-template-wordpress
   namespace: awesome-azd
   title: WordPress with Azure Container Apps
-  description: A blueprint to easily and quickly create and deploy your first scalable
+  description: |
+    A blueprint to easily and quickly create and deploy your first scalable
     and secure WordPress site to Azure, leveraging Azure Container Apps with Azure
     Database for MariaDb.
   annotations:
@@ -28,25 +29,25 @@ metadata:
     awesome.azd/template: apptemplate-wordpress-on-ACA@0.0.1-beta
     awesome.azd/author: Konstantinos Pantos
   tags:
-  - featured
-  - php
-  - javascript
-  - aca
-  - agw
-  - rediscache
-  - monitor
-  - keyvault
-  - bicep
+    - featured
+    - php
+    - javascript
+    - aca
+    - agw
+    - rediscache
+    - monitor
+    - keyvault
+    - bicep
   links:
-  - url: https://github.com/kpantos
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/apptemplate-wordpress-on-ACA
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/apptemplate-wordpress-on-ACA.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/kpantos
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/apptemplate-wordpress-on-ACA
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/apptemplate-wordpress-on-ACA.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -62,7 +63,8 @@ metadata:
   name: todo-csharp-cosmos-sql
   namespace: awesome-azd
   title: React Web App with C# API and MongoDB
-  description: A blueprint for getting a React web app with a C# API and a MongoDB
+  description: |
+    A blueprint for getting a React web app with a C# API and a MongoDB
     database on Azure. The blueprint includes sample application code (a ToDo web
     app) which can be removed and replaced with your own application code. Add your
     own source code and leverage the Infrastructure as Code assets (written in Bicep)
@@ -72,27 +74,27 @@ metadata:
     awesome.azd/template: todo-csharp-cosmos-sql@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - dotnetcsharp
-  - typescript
-  - javascript
-  - appservice
-  - cosmosdb
-  - mongodb
-  - monitor
-  - keyvault
-  - reactjs
-  - bicep
+    - featured
+    - dotnetcsharp
+    - typescript
+    - javascript
+    - appservice
+    - cosmosdb
+    - mongodb
+    - monitor
+    - keyvault
+    - reactjs
+    - bicep
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-csharp-cosmos-sql
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-csharp.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-csharp-cosmos-sql
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-csharp.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -118,7 +120,8 @@ metadata:
   name: RockPaperOrleans
   namespace: awesome-azd
   title: Rock, Paper, Orleans (RPO) - Distributed .NET
-  description: Rock, Paper, Orleans (RPO) is a game built using dotnet, Orleans, and
+  description: |
+    Rock, Paper, Orleans (RPO) is a game built using dotnet, Orleans, and
     runs in Azure.The idea behind RPO is that you write a "player bot" in which you
     implement your player logic.
   annotations:
@@ -126,21 +129,21 @@ metadata:
     awesome.azd/template: RockPaperOrleans@0.0.1
     awesome.azd/author: Brady Gaster
   tags:
-  - featured
-  - dotnetcsharp
-  - cosmosdb
-  - aca
-  - bicep
+    - featured
+    - dotnetcsharp
+    - cosmosdb
+    - aca
+    - bicep
   links:
-  - url: https://rockpaperorleans.net/
-    title: Website
-    icon: help
-  - url: https://github.com/bradygaster/RockPaperOrleans
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/rock-paper-orleans.png
-    title: Preview
-    icon: docs
+    - url: https://rockpaperorleans.net/
+      title: Website
+      icon: help
+    - url: https://github.com/bradygaster/RockPaperOrleans
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/rock-paper-orleans.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -202,30 +205,31 @@ metadata:
   name: pycon-django-workshop
   namespace: awesome-azd
   title: Scalable Django on Azure App Service
-  description: Deploy your Django web application with Microsoft Azure, for scale,
+  description: |
+    Deploy your Django web application with Microsoft Azure, for scale,
     using a cloud architecture with integrated monitoring and load testing.
   annotations:
     github.com/project-slug: tonybaloney/django-on-azure
     awesome.azd/template: pycon-django-workshop@0.0.1-beta
     awesome.azd/author: Anthony Shaw
   tags:
-  - featured
-  - django
-  - python
-  - azuredb-postgresql
-  - webapps
-  - vnets
-  - bicep
+    - featured
+    - django
+    - python
+    - azuredb-postgresql
+    - webapps
+    - vnets
+    - bicep
   links:
-  - url: https://github.com/tonybaloney
-    title: Website
-    icon: help
-  - url: https://github.com/tonybaloney/django-on-azure
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/pycon-django.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/tonybaloney
+      title: Website
+      icon: help
+    - url: https://github.com/tonybaloney/django-on-azure
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/pycon-django.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -246,7 +250,8 @@ metadata:
   name: todo-nodejs-mongo
   namespace: awesome-azd
   title: React Web App with Node.js API and MongoDB
-  description: A blueprint for getting a React web app with a Node.js API and a MongoDB
+  description: |
+    A blueprint for getting a React web app with a Node.js API and a MongoDB
     database on Azure. The blueprint includes sample application code (a ToDo web
     app) which can be removed and replaced with your own application code. Add your
     own source code and leverage the Infrastructure as Code assets (written in Bicep)
@@ -257,27 +262,27 @@ metadata:
     awesome.azd/template: todo-nodejs-mongo@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - nodejs
-  - typescript
-  - javascript
-  - appservice
-  - cosmosdb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
+    - featured
+    - bicep
+    - nodejs
+    - typescript
+    - javascript
+    - appservice
+    - cosmosdb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-nodejs-mongo
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-nodejs-mongo
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -303,7 +308,8 @@ metadata:
   name: todo-nodejs-mongo-swa-func
   namespace: awesome-azd
   title: Static React Web App + Functions with Node.js API and MongoDB
-  description: A blueprint for getting a React web app with a Node.js API and a MongoDB
+  description: |
+    A blueprint for getting a React web app with a Node.js API and a MongoDB
     database on Azure. The blueprint includes sample application code (a ToDo web
     app) which can be removed and replaced with your own application code. Add your
     own source code and leverage the Infrastructure as Code assets (written in Bicep)
@@ -314,29 +320,29 @@ metadata:
     awesome.azd/template: todo-nodejs-mongo-swa-func@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - swa
-  - functions
-  - nodejs
-  - typescript
-  - javascript
-  - cosmosdb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
-  - appservice
+    - featured
+    - bicep
+    - swa
+    - functions
+    - nodejs
+    - typescript
+    - javascript
+    - cosmosdb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
+    - appservice
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-nodejs-mongo-swa-func
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo-swa-func.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-nodejs-mongo-swa-func
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo-swa-func.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -374,7 +380,8 @@ metadata:
   name: todo-python-mongo-swa-func
   namespace: awesome-azd
   title: Static React Web App + Functions with Python API and MongoDB
-  description: A blueprint for getting a React.js web app with Python (FastAPI) API
+  description: |
+    A blueprint for getting a React.js web app with Python (FastAPI) API
     and a MongoDB API in Cosmos database onto Azure. The frontend, currently a ToDo
     application, is designed as a placeholder that can easily be removed and replaced
     with your own frontend code. This architecture is for hosting static web apps
@@ -384,30 +391,30 @@ metadata:
     awesome.azd/template: todo-python-mongo-swa-func@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - swa
-  - functions
-  - python
-  - typescript
-  - javascript
-  - cosmosdb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
-  - appservice
-  - fastapi
+    - featured
+    - bicep
+    - swa
+    - functions
+    - python
+    - typescript
+    - javascript
+    - cosmosdb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
+    - appservice
+    - fastapi
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-python-mongo-swa-func
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python-mongo-swa-func.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-python-mongo-swa-func
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python-mongo-swa-func.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -445,7 +452,8 @@ metadata:
   name: todo-python-mongo-terraform
   namespace: awesome-azd
   title: React Web App with Python API and MongoDB
-  description: A blueprint for getting a React.js web app with Python (FastAPI) API
+  description: |
+    A blueprint for getting a React.js web app with Python (FastAPI) API
     and a MongoDB API in Cosmos database onto Azure. The blueprint includes sample
     application code (a ToDo web app) which can be removed and replaced with your
     own application code. Add your own source code and leverage the Infrastructure
@@ -456,29 +464,29 @@ metadata:
     awesome.azd/template: todo-python-mongo-terraform@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - python
-  - typescript
-  - javascript
-  - cosmosdb
-  - mongodb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
-  - terraform
-  - appservice
-  - fastapi
+    - featured
+    - python
+    - typescript
+    - javascript
+    - cosmosdb
+    - mongodb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
+    - terraform
+    - appservice
+    - fastapi
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-python-mongo-terraform
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python-terraform.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-python-mongo-terraform
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python-terraform.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -506,7 +514,8 @@ metadata:
   name: todo-nodejs-mongo-terraform
   namespace: awesome-azd
   title: React Web App with Node.js API and MongoDB
-  description: A blueprint for getting a React web app with a Node.js API and a MongoDB
+  description: |
+    A blueprint for getting a React web app with a Node.js API and a MongoDB
     database on Azure. The blueprint includes sample application code (a ToDo web
     app) which can be removed and replaced with your own application code. Add your
     own source code and leverage the Infrastructure as Code assets (written in Terraform)
@@ -517,28 +526,28 @@ metadata:
     awesome.azd/template: todo-nodejs-mongo-terraform@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - nodejs
-  - typescript
-  - javascript
-  - cosmosdb
-  - mongodb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
-  - terraform
-  - appservice
+    - featured
+    - nodejs
+    - typescript
+    - javascript
+    - cosmosdb
+    - mongodb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
+    - terraform
+    - appservice
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-nodejs-mongo-terraform
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo-terraform.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-nodejs-mongo-terraform
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo-terraform.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -566,7 +575,8 @@ metadata:
   name: todo-python-mongo
   namespace: awesome-azd
   title: React Web App with Python API and MongoDB
-  description: A blueprint for getting a React.js web app with Python (FastAPI) API
+  description: |
+    A blueprint for getting a React.js web app with Python (FastAPI) API
     and a MongoDB API in Cosmos database onto Azure. The blueprint includes sample
     application code (a ToDo web app) which can be removed and replaced with your
     own application code. Add your own source code and leverage the Infrastructure
@@ -577,28 +587,28 @@ metadata:
     awesome.azd/template: todo-python-mongo@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - python
-  - typescript
-  - javascript
-  - appservice
-  - cosmosdb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
-  - fastapi
+    - featured
+    - bicep
+    - python
+    - typescript
+    - javascript
+    - appservice
+    - cosmosdb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
+    - fastapi
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-python-mongo
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-python-mongo
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -624,7 +634,8 @@ metadata:
   name: todo-nodejs-mongo-aca
   namespace: awesome-azd
   title: Containerized React Web App with Node.js API and MongoDB
-  description: A blueprint for getting a React web app with a Node.js API and a MongoDB
+  description: |
+    A blueprint for getting a React web app with a Node.js API and a MongoDB
     database onto Azure. The blueprint includes sample application code (a ToDo web
     app) which can be removed and replaced with your own application code. Add your
     own source code and leverage the Infrastructure as Code assets (written in Bicep)
@@ -636,28 +647,28 @@ metadata:
     awesome.azd/template: todo-nodejs-mongo-aca@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - nodejs
-  - typescript
-  - javascript
-  - appservice
-  - cosmosdb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
-  - aca
+    - featured
+    - bicep
+    - nodejs
+    - typescript
+    - javascript
+    - appservice
+    - cosmosdb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
+    - aca
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-nodejs-mongo-aca
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-node-aca.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-nodejs-mongo-aca
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-node-aca.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -682,7 +693,8 @@ metadata:
   name: todo-python-mongo-aca
   namespace: awesome-azd
   title: Containerized React Web App with Python API and MongoDB
-  description: A blueprint for getting a React.js web app with Python (FastAPI) API
+  description: |
+    A blueprint for getting a React.js web app with Python (FastAPI) API
     and a MongoDB API in Cosmos database onto Azure. The frontend, currently a ToDo
     application, is designed as a placeholder that can easily be removed and replaced
     with your own frontend code. This architecture is for running containerized apps
@@ -692,28 +704,28 @@ metadata:
     awesome.azd/template: todo-python-mongo-aca@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - python
-  - typescript
-  - javascript
-  - aca
-  - cosmosdb
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
-  - fastapi
+    - featured
+    - bicep
+    - python
+    - typescript
+    - javascript
+    - aca
+    - cosmosdb
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
+    - fastapi
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-python-mongo-aca
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python-aca.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-python-mongo-aca
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-python-aca.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -738,7 +750,8 @@ metadata:
   name: todo-csharp-sql
   namespace: awesome-azd
   title: 'React Web App with C# API and SQL Database '
-  description: A blueprint for getting a React web app with a C# API and a SQL database
+  description: |
+    A blueprint for getting a React web app with a C# API and a SQL database
     on Azure. The blueprint includes sample application code (a ToDo web app) which
     can be removed and replaced with your own application code. Add your own source
     code and leverage the Infrastructure as Code assets (written in Bicep) to get
@@ -748,27 +761,27 @@ metadata:
     awesome.azd/template: todo-csharp-sql@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - dotnetcsharp
-  - typescript
-  - javascript
-  - appservice
-  - azuresql
-  - monitor
-  - keyvault
-  - mongodb
-  - reactjs
+    - featured
+    - bicep
+    - dotnetcsharp
+    - typescript
+    - javascript
+    - appservice
+    - azuresql
+    - monitor
+    - keyvault
+    - mongodb
+    - reactjs
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-csharp-sql
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-csharp-sql.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-csharp-sql
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-csharp-sql.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -794,7 +807,8 @@ metadata:
   name: todo-java-mongo
   namespace: awesome-azd
   title: 'React Web App with Java API and MongoDB '
-  description: A blueprint for getting a React.js web app with a Java API and a MongoDB
+  description: |
+    A blueprint for getting a React.js web app with a Java API and a MongoDB
     database on Azure. The blueprint includes sample application code (a ToDo web
     app) which can be removed and replaced with your own application code. Add your
     own source code and leverage the Infrastructure as Code assets (written in Bicep)
@@ -805,26 +819,26 @@ metadata:
     awesome.azd/template: todo-java-mongo@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - java
-  - typescript
-  - appservice
-  - cosmosdb
-  - keyvault
-  - monitor
-  - mongodb
-  - reactjs
+    - featured
+    - bicep
+    - java
+    - typescript
+    - appservice
+    - cosmosdb
+    - keyvault
+    - monitor
+    - mongodb
+    - reactjs
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-java-mongo
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-java-mongo.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-java-mongo
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-java-mongo.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -850,7 +864,8 @@ metadata:
   name: todo-java-mongo-aca
   namespace: awesome-azd
   title: Containerized React Web App with Java API and MongoDB
-  description: A blueprint for getting a React web app with a Java API and a MongoDB
+  description: |
+    A blueprint for getting a React web app with a Java API and a MongoDB
     database on Azure. The blueprint includes sample application code (a ToDo web
     app) which can be removed and replaced with your own application code. Add your
     own source code and leverage the Infrastructure as Code assets (written in Bicep)
@@ -861,26 +876,26 @@ metadata:
     awesome.azd/template: todo-java-mongo-aca@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - java
-  - typescript
-  - appservice
-  - cosmosdb
-  - keyvault
-  - monitor
-  - mongodb
-  - reactjs
+    - featured
+    - bicep
+    - java
+    - typescript
+    - appservice
+    - cosmosdb
+    - keyvault
+    - monitor
+    - mongodb
+    - reactjs
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-java-mongo-aca
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-java-mongo-aca.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-java-mongo-aca
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-java-mongo-aca.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -905,7 +920,8 @@ metadata:
   name: todo-csharp-sql-swa-func
   namespace: awesome-azd
   title: Static React Web App + Functions with C# API and SQL Database
-  description: A blueprint for getting a React web app with a C# API and a SQL database
+  description: |
+    A blueprint for getting a React web app with a C# API and a SQL database
     on Azure. The blueprint includes sample application code (a ToDo web app) which
     can be removed and replaced with your own application code. Add your own source
     code and leverage the Infrastructure as Code assets (written in Bicep) to get
@@ -916,28 +932,28 @@ metadata:
     awesome.azd/template: todo-csharp-sql-swa-func@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - swa
-  - functions
-  - dotnetcsharp
-  - typescript
-  - javascript
-  - monitor
-  - keyvault
-  - reactjs
-  - appservice
-  - azuresql
+    - featured
+    - bicep
+    - swa
+    - functions
+    - dotnetcsharp
+    - typescript
+    - javascript
+    - monitor
+    - keyvault
+    - reactjs
+    - appservice
+    - azuresql
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-csharp-sql-swa-func
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-csharp-sql-swa-func.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-csharp-sql-swa-func
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-csharp-sql-swa-func.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -975,7 +991,8 @@ metadata:
   name: todo-nodejs-mongo-aks
   namespace: awesome-azd
   title: Kubernetes React Web App with Node.js API and MongoDB
-  description: A blueprint for getting a React.js web app with a Node.js API and a
+  description: |
+    A blueprint for getting a React.js web app with a Node.js API and a
     MongoDB database on Azure. The blueprint includes sample application code (a ToDo
     web app) which can be removed and replaced with your own application code. Add
     your own source code and leverage the Infrastructure as Code assets (written in
@@ -986,28 +1003,28 @@ metadata:
     awesome.azd/template: todo-nodejs-mongo-aks@0.0.1-beta
     awesome.azd/author: Azure Dev
   tags:
-  - featured
-  - bicep
-  - nodejs
-  - typescript
-  - javascript
-  - mongodb
-  - monitor
-  - keyvault
-  - reactjs
-  - appservice
-  - cosmosdb
-  - aks
+    - featured
+    - bicep
+    - nodejs
+    - typescript
+    - javascript
+    - mongodb
+    - monitor
+    - keyvault
+    - reactjs
+    - appservice
+    - cosmosdb
+    - aks
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/todo-nodejs-mongo-aks
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo-aks.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/todo-nodejs-mongo-aks
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-nodejs-mongo-aks.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1044,7 +1061,8 @@ metadata:
   name: asa-samples-web-application
   namespace: awesome-azd
   title: Static React Web App with Java API and PostgreSQL
-  description: A blueprint for getting a React web app with a Java API and a Azure
+  description: |
+    A blueprint for getting a React web app with a Java API and a Azure
     Database for PostgreSQL - Flexible Server on Azure. The blueprint includes sample
     application code (a ToDo web app) which can be removed and replaced with your
     own application code. Add your own source code and leverage the Infrastructure
@@ -1055,24 +1073,24 @@ metadata:
     awesome.azd/template: asa-samples-web-application@0.0.1-beta
     awesome.azd/author: Yi Liu
   tags:
-  - featured
-  - bicep
-  - java
-  - nodejs
-  - spring
-  - webapps
-  - azurespringapps
-  - azuredb-postgresql
+    - featured
+    - bicep
+    - java
+    - nodejs
+    - spring
+    - webapps
+    - azurespringapps
+    - azuredb-postgresql
   links:
-  - url: https://github.com/Azure-Samples/
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/ASA-Samples-Web-Application
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-java-postgres-asa.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples/
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/ASA-Samples-Web-Application
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/todo-java-postgres-asa.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1103,31 +1121,32 @@ metadata:
   name: openai-plugin-fastapi
   namespace: awesome-azd
   title: ChatGPT Plugin using Python (FastAPI)
-  description: This is a quickstart for creating a ChatGPT Plugin using Python and
+  description: |
+    This is a quickstart for creating a ChatGPT Plugin using Python and
     Azure.
   annotations:
     github.com/project-slug: Azure-Samples/openai-plugin-fastapi
     awesome.azd/template: openai-plugin-fastapi@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - featured
-  - bicep
-  - python
-  - aca
-  - cosmosdb
-  - monitor
-  - fastapi
-  - ai
+    - featured
+    - bicep
+    - python
+    - aca
+    - cosmosdb
+    - monitor
+    - fastapi
+    - ai
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/openai-plugin-fastapi
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/chatgpt-plugin-python.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/openai-plugin-fastapi
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/chatgpt-plugin-python.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1148,7 +1167,8 @@ metadata:
   name: azure-search-openai-demo-csharp
   namespace: awesome-azd
   title: ChatGPT + Enterprise Data with Azure OpenAI and Cognitive Search
-  description: A sample app for the Retrieval-Augmented Generation pattern running
+  description: |
+    A sample app for the Retrieval-Augmented Generation pattern running
     in Azure, using Azure Cognitive Search for retrieval and Azure OpenAI large language
     models to power ChatGPT-style and Q&A experiences.
   annotations:
@@ -1156,28 +1176,28 @@ metadata:
     awesome.azd/template: azure-search-openai-demo-csharp@0.0.3-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - featured
-  - bicep
-  - dotnetcsharp
-  - aks
-  - kubernetes
-  - aca
-  - cosmosdb
-  - cognitivesearch
-  - openai
-  - chatgpt
-  - rediscache
-  - ai
+    - featured
+    - bicep
+    - dotnetcsharp
+    - aks
+    - kubernetes
+    - aca
+    - cosmosdb
+    - cognitivesearch
+    - openai
+    - chatgpt
+    - rediscache
+    - ai
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/azure-search-openai-demo-csharp/
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/chatgpt-enterprise-dotnet.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/azure-search-openai-demo-csharp/
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/chatgpt-enterprise-dotnet.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1213,31 +1233,32 @@ metadata:
   name: simple-chatgpt-python
   namespace: awesome-azd
   title: Simple Chat Application using Azure OpenAI
-  description: A sample chat app that uses Python and the Flask framework to stream
+  description: |
+    A sample chat app that uses Python and the Flask framework to stream
     ChatGPT completions as server-sent events to a simple frontend.
   annotations:
     github.com/project-slug: Azure-Samples/chatgpt-quickstart
     awesome.azd/template: simple-chatgpt-python@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - featured
-  - bicep
-  - python
-  - openai
-  - chatgpt
-  - ai
-  - flask
-  - aca
+    - featured
+    - bicep
+    - python
+    - openai
+    - chatgpt
+    - ai
+    - flask
+    - aca
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/chatgpt-quickstart
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simplechat-azureopenai.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/chatgpt-quickstart
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simplechat-azureopenai.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1270,31 +1291,32 @@ metadata:
   name: spring-chatgpt-sample
   namespace: awesome-azd
   title: Spring ChatGPT Application using Azure OpenAI on Azure Spring Apps
-  description: A sample that uses Java Spring framework to build ChatGPT-style application
+  description: |
+    A sample that uses Java Spring framework to build ChatGPT-style application
     running in Azure Spring Apps.
   annotations:
     github.com/project-slug: Azure-Samples/spring-chatgpt-sample
     awesome.azd/template: spring-chatgpt-sample@0.0.1-beta
     awesome.azd/author: Yi Liu
   tags:
-  - featured
-  - bicep
-  - java
-  - openai
-  - chatgpt
-  - ai
-  - blobstorage
-  - azurespringapps
+    - featured
+    - bicep
+    - java
+    - openai
+    - chatgpt
+    - ai
+    - blobstorage
+    - azurespringapps
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/spring-chatgpt-sample
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/asa-chatgpt.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/spring-chatgpt-sample
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/asa-chatgpt.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1324,11 +1346,13 @@ spec:
           prepackage:
             posix:
               shell: sh
-              run: cd ..;./mvnw clean install -N;cd spring-chatgpt-sample-common;../mvnw
+              run:
+                cd ..;./mvnw clean install -N;cd spring-chatgpt-sample-common;../mvnw
                 clean install
             windows:
               shell: pwsh
-              run: cd ..;./mvnw.cmd clean install -N;cd spring-chatgpt-sample-common;../mvnw.cmd
+              run:
+                cd ..;./mvnw.cmd clean install -N;cd spring-chatgpt-sample-common;../mvnw.cmd
                 clean install
 ---
 apiVersion: backstage.io/v1alpha1
@@ -1337,7 +1361,8 @@ metadata:
   name: contoso-real-estate
   namespace: awesome-azd
   title: Enterprise-Grade Reference Architecture for JavaScript
-  description: A reference architecture and components for building enterprise-grade
+  description: |
+    A reference architecture and components for building enterprise-grade
     modern composable frontends (or micro-frontends) and cloud-native applications.
     It is a collection of best practices, architecture patterns, and functional components
     that can be used to build and deploy modern JavaScript applications to Azure.
@@ -1346,26 +1371,26 @@ metadata:
     awesome.azd/template: contoso-real-estate@0.0.1
     awesome.azd/author: JavaScript Advocacy Team|Natalia Venditto
   tags:
-  - bicep
-  - javascript
-  - swa
-  - aca
-  - keyvault
-  - blobstorage
-  - azuredb-postgresql
-  - cosmosdb
-  - apim
-  - enterprisepatterns
+    - bicep
+    - javascript
+    - swa
+    - aca
+    - keyvault
+    - blobstorage
+    - azuredb-postgresql
+    - cosmosdb
+    - apim
+    - enterprisepatterns
   links:
-  - url: https://github.com/Azure-Samples|https://github.com/anfibiacreativa
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/contoso-real-estate
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/enterprise-grade-reference-architecture-for-javascript.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples|https://github.com/anfibiacreativa
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/contoso-real-estate
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/enterprise-grade-reference-architecture-for-javascript.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1421,7 +1446,8 @@ metadata:
   name: django-postgresql-sample-app
   namespace: awesome-azd
   title: Python (Django) Web App with PostgreSQL in VNet
-  description: A restaurants review web app that uses whitenoise for static assets
+  description: |
+    A restaurants review web app that uses whitenoise for static assets
     and PostgreSQL for the database. Ready for deployment on App Service with a PostgreSQL
     Flexible Server inside a VNet.
   annotations:
@@ -1429,22 +1455,22 @@ metadata:
     awesome.azd/template: django-postgresql-sample-app@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - python
-  - django
-  - webapps
-  - azuredb-postgresql
-  - appservice
-  - vnets
+    - python
+    - django
+    - webapps
+    - azuredb-postgresql
+    - appservice
+    - vnets
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/msdocs-django-postgresql-sample-app
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/msdocs-django-postgresql-sample-app.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/msdocs-django-postgresql-sample-app
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/msdocs-django-postgresql-sample-app.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1465,7 +1491,8 @@ metadata:
   name: azure-django-postgres-flexible-aca
   namespace: awesome-azd
   title: Python (Django) Web App with PostgreSQL via Azure Container Apps
-  description: A space tourism web app that uses PostgreSQL for the database. The
+  description: |
+    A space tourism web app that uses PostgreSQL for the database. The
     web app is containerize and deploy with Azure Container Apps with secrets managed
     by Azure Key Vault
   annotations:
@@ -1473,21 +1500,21 @@ metadata:
     awesome.azd/template: azure-django-postgres-flexible-aca
     awesome.azd/author: Azure Content Team
   tags:
-  - python
-  - django
-  - aca
-  - azuredb-postgresql
-  - bicep
+    - python
+    - django
+    - aca
+    - azuredb-postgresql
+    - bicep
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/azure-django-postgres-aca
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/azure-django-postgres-aca.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/azure-django-postgres-aca
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/azure-django-postgres-aca.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1511,7 +1538,8 @@ metadata:
   name: flask-postgresql-sample-app
   namespace: awesome-azd
   title: Python (Flask) Web App with PostgreSQL in VNet
-  description: A restaurants review web app with a PostgreSQL database, written in
+  description: |
+    A restaurants review web app with a PostgreSQL database, written in
     the Python Flask framework plus SQL-Alchemy plus Alembic for database interactions.
     Ready for deployment on App Service with a PostgreSQL Flexible Server inside a
     VNet.
@@ -1520,22 +1548,22 @@ metadata:
     awesome.azd/template: flask-postgresql-sample-app@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - python
-  - webapps
-  - azuredb-postgresql
-  - appservice
-  - vnets
-  - flask
+    - python
+    - webapps
+    - azuredb-postgresql
+    - appservice
+    - vnets
+    - flask
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/msdocs-flask-postgresql-sample-app
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/msdocs-flask-postgresql-sample-app.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/msdocs-flask-postgresql-sample-app
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/msdocs-flask-postgresql-sample-app.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1556,29 +1584,30 @@ metadata:
   name: pubsub-dapr-csharp-servicebus
   namespace: awesome-azd
   title: Microservices App - Dapr PubSub C# ACA ServiceBus
-  description: A complete microservice application featuring Dapr Pub-Sub, deployed
+  description: |
+    A complete microservice application featuring Dapr Pub-Sub, deployed
     to Azure Container Apps and Azure Service Bus Topics with dead-lettering support.
   annotations:
     github.com/project-slug: Azure-Samples/pubsub-dapr-csharp-servicebus
     awesome.azd/template: pubsub-dapr-csharp-servicebus@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - bicep
-  - dotnetcsharp
-  - aca
-  - dapr
-  - servicebus
-  - aca
+    - bicep
+    - dotnetcsharp
+    - aca
+    - dapr
+    - servicebus
+    - aca
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/pubsub-dapr-csharp-servicebus
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/pubsub-dapr-csharp-servicebus
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1606,29 +1635,30 @@ metadata:
   name: pubsub-dapr-python-servicebus-aca
   namespace: awesome-azd
   title: Microservices App - Dapr PubSub Python ACA ServiceBus
-  description: A complete microservice application featuring Dapr Pub-Sub, deployed
+  description: |
+    A complete microservice application featuring Dapr Pub-Sub, deployed
     to Azure Container Apps and Azure Service Bus Topics with dead-lettering support.
   annotations:
     github.com/project-slug: Azure-Samples/pubsub-dapr-python-servicebus
     awesome.azd/template: pubsub-dapr-python-servicebus-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - bicep
-  - python
-  - aca
-  - dapr
-  - servicebus
-  - aca
+    - bicep
+    - python
+    - aca
+    - dapr
+    - servicebus
+    - aca
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/pubsub-dapr-python-servicebus
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/pubsub-dapr-python-servicebus
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1656,30 +1686,31 @@ metadata:
   name: pubsub-dapr-javascript-servicebus-aca
   namespace: awesome-azd
   title: Microservices App - Dapr PubSub Node.js ACA ServiceBus
-  description: A complete microservice application featuring Dapr Pub-Sub, deployed
+  description: |
+    A complete microservice application featuring Dapr Pub-Sub, deployed
     to Azure Container Apps and Azure Service Bus Topics with dead-lettering support.
   annotations:
     github.com/project-slug: Azure-Samples/pubsub-dapr-nodejs-servicebus
     awesome.azd/template: pubsub-dapr-javascript-servicebus-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - bicep
-  - javascript
-  - nodejs
-  - aca
-  - dapr
-  - servicebus
-  - aca
+    - bicep
+    - javascript
+    - nodejs
+    - aca
+    - dapr
+    - servicebus
+    - aca
   links:
-  - url: https://github.com/Azure/azure-dev
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/pubsub-dapr-nodejs-servicebus
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure/azure-dev
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/pubsub-dapr-nodejs-servicebus
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1706,7 +1737,8 @@ metadata:
   name: bindings-dapr-csharp-postgres-aca
   namespace: awesome-azd
   title: Microservices App - Dapr Bindings Cron C# ACA PostgreSQL
-  description: Create microservice to demonstrate Dapr's bindings API to work with
+  description: |
+    Create microservice to demonstrate Dapr's bindings API to work with
     external systems as inputs and outputs. The service listens to input binding events
     from a system CRON and then outputs the contents of local data to a PostgreSQL
     output binding.
@@ -1715,20 +1747,20 @@ metadata:
     awesome.azd/template: bindings-dapr-sharp-postgres-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dapr
-  - dotnetcsharp
-  - azuredb-postgresql
-  - aca
+    - dapr
+    - dotnetcsharp
+    - azuredb-postgresql
+    - aca
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/bindings-dapr-csharp-cron-postgres
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/bindings-dapr-cron-postgres.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/bindings-dapr-csharp-cron-postgres
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/bindings-dapr-cron-postgres.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1750,7 +1782,8 @@ metadata:
   name: bindings-dapr-node-postgres-aca
   namespace: awesome-azd
   title: Microservices App - Dapr Bindings Cron Python ACA PostgreSQL
-  description: Create a microservice app to demonstrate Dapr's bindings API to work
+  description: |
+    Create a microservice app to demonstrate Dapr's bindings API to work
     with external systems as inputs and outputs. The service listens to input binding
     events from a system CRON and then outputs the contents of local data to a postgreSQL
     output binding.
@@ -1759,20 +1792,20 @@ metadata:
     awesome.azd/template: bindings-dapr-node-postgres-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dapr
-  - python
-  - azuredb-postgresql
-  - aca
+    - dapr
+    - python
+    - azuredb-postgresql
+    - aca
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/bindings-dapr-python-cron-postgres
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/bindings-dapr-cron-postgres.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/bindings-dapr-python-cron-postgres
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/bindings-dapr-cron-postgres.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1794,7 +1827,8 @@ metadata:
   name: bindings-dapr-node-postgres-aca
   namespace: awesome-azd
   title: Microservices App - Dapr Bindings Cron Node.js ACA PostgreSQL
-  description: Create a microservice app to demonstrate Dapr's bindings API to work
+  description: |
+    Create a microservice app to demonstrate Dapr's bindings API to work
     with external systems as inputs and outputs. The service listens to input binding
     events from a system CRON and then outputs the contents of local data to a postgreSQL
     output binding.
@@ -1803,21 +1837,21 @@ metadata:
     awesome.azd/template: bindings-dapr-node-postgres-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dapr
-  - nodejs
-  - azuredb-postgresql
-  - javascript
-  - aca
+    - dapr
+    - nodejs
+    - azuredb-postgresql
+    - javascript
+    - aca
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/bindings-dapr-nodejs-cron-postgres
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/bindings-dapr-cron-postgres.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/bindings-dapr-nodejs-cron-postgres
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/bindings-dapr-cron-postgres.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1839,7 +1873,8 @@ metadata:
   name: service-invoke-dapr-node-aca
   namespace: awesome-azd
   title: Microservices App - Dapr Service Invoke Node.js ACA
-  description: Create two microservices that communicate using Dapr's Service Invocation
+  description: |
+    Create two microservices that communicate using Dapr's Service Invocation
     API. The Service Invocation API enables your applications to communicate reliably
     and securely by leveraging auto-mTLS and built-in retries.
   annotations:
@@ -1847,19 +1882,19 @@ metadata:
     awesome.azd/template: service-invoke-dapr-node-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dapr
-  - nodejs
-  - aca
+    - dapr
+    - nodejs
+    - aca
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/svc-invoke-dapr-nodejs
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/svc-invoke-dapr.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/svc-invoke-dapr-nodejs
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/svc-invoke-dapr.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1886,7 +1921,8 @@ metadata:
   name: service-invoke-dapr-node-aca
   namespace: awesome-azd
   title: Microservices App - Dapr Service Invoke Python ACA
-  description: Create two microservices that communicate using Dapr's Service Invocation
+  description: |
+    Create two microservices that communicate using Dapr's Service Invocation
     API. The Service Invocation API enables your applications to communicate reliably
     and securely by leveraging auto-mTLS and built-in retries.
   annotations:
@@ -1894,19 +1930,19 @@ metadata:
     awesome.azd/template: service-invoke-dapr-node-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dapr
-  - python
-  - aca
+    - dapr
+    - python
+    - aca
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/svc-invoke-dapr-python
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/svc-invoke-dapr.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/svc-invoke-dapr-python
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/svc-invoke-dapr.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1933,7 +1969,8 @@ metadata:
   name: service-invoke-dapr-dotnet-aca
   namespace: awesome-azd
   title: Microservices App - Dapr Service Invoke C# ACA
-  description: Create two microservices that communicate using Dapr's Service Invocation
+  description: |
+    Create two microservices that communicate using Dapr's Service Invocation
     API. The Service Invocation API enables your applications to communicate reliably
     and securely by leveraging auto-mTLS and built-in retries.
   annotations:
@@ -1941,19 +1978,19 @@ metadata:
     awesome.azd/template: service-invoke-dapr-dotnet-aca@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dapr
-  - dotnetcsharp
-  - aca
+    - dapr
+    - dotnetcsharp
+    - aca
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/svc-invoke-dapr-csharp
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/svc-invoke-dapr.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/svc-invoke-dapr-csharp
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/svc-invoke-dapr.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -1980,31 +2017,32 @@ metadata:
   name: azure-search-openai-demo
   namespace: awesome-azd
   title: ChatGPT and Enterprise data with Azure OpenAI and Cognitive Search
-  description: Demonstration of how to leverage Azure OpenAI and Cognitive Search
+  description: |
+    Demonstration of how to leverage Azure OpenAI and Cognitive Search
     to enable Information Search and Discovery over organizational content.
   annotations:
     github.com/project-slug: Azure-Samples/azure-search-openai-demo
     awesome.azd/template: azure-search-openai-demo@0.0.2-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - openai
-  - chatgpt
-  - cognitivesearch
-  - python
-  - typescript
-  - bicep
-  - nodejs
-  - ai
+    - openai
+    - chatgpt
+    - cognitivesearch
+    - python
+    - typescript
+    - bicep
+    - nodejs
+    - ai
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/azure-search-openai-demo
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/azure-search-openai-demo.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/azure-search-openai-demo
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/azure-search-openai-demo.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2049,26 +2087,27 @@ metadata:
   name: fastapi-on-azure-functions
   namespace: awesome-azd
   title: FastAPI on Azure Functions
-  description: A simple FastAPI app deployed to Azure Functions. Can also be run and
+  description: |
+    A simple FastAPI app deployed to Azure Functions. Can also be run and
     debugged locally with the Azure Functions Core Tool emulator.
   annotations:
     github.com/project-slug: Azure-Samples/fastapi-on-azure-functions
     awesome.azd/template: fastapi-on-azure-functions@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - python
-  - fastapi
-  - functions
+    - python
+    - fastapi
+    - functions
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/fastapi-on-azure-functions
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/fastapi-on-azure-functions.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/fastapi-on-azure-functions
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/fastapi-on-azure-functions.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2089,7 +2128,8 @@ metadata:
   name: spring-petclinic
   namespace: awesome-azd
   title: Spring PetClinic - Java Spring MySQL
-  description: Spring PetClinic application using a set of Azure solutions. Azure
+  description: |
+    Spring PetClinic application using a set of Azure solutions. Azure
     App Service for app hosting, Azure Database for MySQL for storage, Azure Key Vault
     for securing secret and Azure Application Insights for monitoring and logging.
   annotations:
@@ -2097,25 +2137,25 @@ metadata:
     awesome.azd/template: spring-petclinic-azure-mysql@0.0.1-SNAPSHOT
     awesome.azd/author: Miller Wang
   tags:
-  - java
-  - appservice
-  - azuresql
-  - monitor
-  - keyvault
-  - appinsights
-  - bicep
-  - spring
-  - thymeleaf
+    - java
+    - appservice
+    - azuresql
+    - monitor
+    - keyvault
+    - appinsights
+    - bicep
+    - spring
+    - thymeleaf
   links:
-  - url: https://github.com/wangmingliang-ms
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/spring-petclinic-java-mysql
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/spring-petclinic-java-mysql.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/wangmingliang-ms
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/spring-petclinic-java-mysql
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/spring-petclinic-java-mysql.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2137,30 +2177,31 @@ metadata:
   name: asa-samples-event-driven-application
   namespace: awesome-azd
   title: Event Driven Java Application with Azure Service Bus on Azure Spring Apps
-  description: 'A complete event-driven application that includes everything you need
+  description: |
+    'A complete event-driven application that includes everything you need
     to build, deploy, and monitor an Azure solution. '
   annotations:
     github.com/project-slug: Azure-Samples/ASA-Samples-Event-Driven-Application
     awesome.azd/template: asa-samples-event-driven-application@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - java
-  - servicebus
-  - monitor
-  - keyvault
-  - azurespringapps
-  - bicep
-  - spring
+    - java
+    - servicebus
+    - monitor
+    - keyvault
+    - azurespringapps
+    - bicep
+    - spring
   links:
-  - url: https://github.com/Azure-Samples/
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/ASA-Samples-Event-Driven-Application
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/event-driven-spring-apps.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples/
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/ASA-Samples-Event-Driven-Application
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/event-driven-spring-apps.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2183,7 +2224,8 @@ metadata:
   name: app-service-javascript-sap-cloud-sdk-quickstart
   namespace: awesome-azd
   title: SAP Cloud SDK on Azure App Service Quickstart (TypeScript)
-  description: This repos serves as quick-start project showcasing SAP Cloud SDK for
+  description: |
+    This repos serves as quick-start project showcasing SAP Cloud SDK for
     JavaScript OData consumption running on Azure App Services. Its primary purpose
     is to set you up for success for your SAP extension project on Azure and reduce
     the lead time to your first successful deployment as much as possible with developer
@@ -2193,26 +2235,26 @@ metadata:
     awesome.azd/template: app-service-javascript-sap-cloud-sdk-quickstart
     awesome.azd/author: Martin Pankraz|Christian Lechner
   tags:
-  - typescript
-  - nodejs
-  - bicep
-  - webapps
-  - keyvault
-  - appinsights
-  - featured
-  - nestjs
-  - sap
-  - sapcloudsdk
+    - typescript
+    - nodejs
+    - bicep
+    - webapps
+    - keyvault
+    - appinsights
+    - featured
+    - nestjs
+    - sap
+    - sapcloudsdk
   links:
-  - url: https://github.com/MartinPankraz|https://github.com/lechnerc77
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/app-service-javascript-sap-cloud-sdk-quickstart
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/app-service-javascript-sap-cloud-sdk-quickstart.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/MartinPankraz|https://github.com/lechnerc77
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/app-service-javascript-sap-cloud-sdk-quickstart
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/app-service-javascript-sap-cloud-sdk-quickstart.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2235,7 +2277,8 @@ metadata:
   name: servicebus-csharp-function-dataverse
   namespace: awesome-azd
   title: Service Bus messages processing to Dataverse
-  description: Starter solution to process Service Bus messages to Dataverse, C# for
+  description: |
+    Starter solution to process Service Bus messages to Dataverse, C# for
     the Azure Functions app processing the messages, Azure Service Bus for the reception
     of the messages, and Azure Monitor for monitoring and logging.
   annotations:
@@ -2243,22 +2286,22 @@ metadata:
     awesome.azd/template: servicebus-csharp-function-dataverse@0.1.0
     awesome.azd/author: Raphael Pothin
   tags:
-  - dotnetcsharp
-  - functions
-  - servicebus
-  - monitor
-  - keyvault
-  - dataverse
+    - dotnetcsharp
+    - functions
+    - servicebus
+    - monitor
+    - keyvault
+    - dataverse
   links:
-  - url: https://github.com/rpothin
-    title: Website
-    icon: help
-  - url: https://github.com/rpothin/servicebus-csharp-function-dataverse
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/servicebus-csharp-function-dataverse.jpg
-    title: Preview
-    icon: docs
+    - url: https://github.com/rpothin
+      title: Website
+      icon: help
+    - url: https://github.com/rpothin/servicebus-csharp-function-dataverse
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/servicebus-csharp-function-dataverse.jpg
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2279,26 +2322,27 @@ metadata:
   name: simple-flask-webapp
   namespace: awesome-azd
   title: Simple Flask AZD
-  description: A tiny, no-frills, template to deploy Python's Flask web framework
+  description: |
+    A tiny, no-frills, template to deploy Python's Flask web framework
     to Azure App Service in the free tier.
   annotations:
     github.com/project-slug: tonybaloney/simple-flask-azd
     awesome.azd/template: simple-flask-webapp@0.0.1-beta
     awesome.azd/author: Anthony Shaw
   tags:
-  - python
-  - appservice
-  - flask
+    - python
+    - appservice
+    - flask
   links:
-  - url: https://github.com/tonybaloney
-    title: Website
-    icon: help
-  - url: https://github.com/tonybaloney/simple-flask-azd
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-flask-azd.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/tonybaloney
+      title: Website
+      icon: help
+    - url: https://github.com/tonybaloney/simple-flask-azd
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-flask-azd.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2319,7 +2363,8 @@ metadata:
   name: text-summzarize-csharp-ai-func
   namespace: awesome-azd
   title: Function App - C# AI Text Summarize
-  description: This sample shows how to take text documents as a input via BlobTrigger,
+  description: |
+    This sample shows how to take text documents as a input via BlobTrigger,
     does Text Summarization processing using the AI Congnitive Language service, and
     then outputs to another text document using BlobOutput binding.
   annotations:
@@ -2327,21 +2372,21 @@ metadata:
     awesome.azd/template: text-summzarize-csharp-ai-func@0.0.1-beta
     awesome.azd/author: Paul Yuknewicz
   tags:
-  - functions
-  - dotnetcsharp
-  - azureai
-  - bicep
-  - ai
+    - functions
+    - dotnetcsharp
+    - azureai
+    - bicep
+    - ai
   links:
-  - url: https://github.com/paulyuk
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/function-csharp-ai-textsummarize
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/paulyuk
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/function-csharp-ai-textsummarize
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2362,7 +2407,8 @@ metadata:
   name: text-summzarize-python-ai-func
   namespace: awesome-azd
   title: Function App - Python AI Text Summarize
-  description: This sample shows how to take text documents as a input via BlobTrigger,
+  description: |
+    This sample shows how to take text documents as a input via BlobTrigger,
     does Text Summarization processing using the AI Congnitive Language service, and
     then outputs to another text document using BlobOutput binding. Uses Azure Functions
     Python v2 programming model.
@@ -2371,21 +2417,21 @@ metadata:
     awesome.azd/template: text-summzarize-python-ai-func@0.0.1-beta
     awesome.azd/author: Paul Yuknewicz
   tags:
-  - functions
-  - python
-  - azureai
-  - bicep
-  - ai
+    - functions
+    - python
+    - azureai
+    - bicep
+    - ai
   links:
-  - url: https://github.com/paulyuk
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/function-python-ai-textsummarize
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/paulyuk
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/function-python-ai-textsummarize
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/test.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2406,7 +2452,8 @@ metadata:
   name: simple-flask-container-app
   namespace: awesome-azd
   title: Flask Container with CDN
-  description: A simple photos website written with Python Flask and Bootstrap. Can
+  description: |
+    A simple photos website written with Python Flask and Bootstrap. Can
     be run locally with Docker and then deployed to Azure Container Apps with an Azure
     CDN in front.
   annotations:
@@ -2414,21 +2461,21 @@ metadata:
     awesome.azd/template: flask-gallery-container-app@0.0.1-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - flask
-  - webapps
-  - aca
-  - azurecdn
+    - python
+    - flask
+    - webapps
+    - aca
+    - azurecdn
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/flask-gallery-container-app
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-cdn-container-app.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/flask-gallery-container-app
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-cdn-container-app.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2449,7 +2496,8 @@ metadata:
   name: flask-surveys-container-app
   namespace: awesome-azd
   title: Flask Surveys Container App
-  description: A survey app written with the Python Flask framework which uses Flask-SQLAlchemy
+  description: |
+    A survey app written with the Python Flask framework which uses Flask-SQLAlchemy
     with a PostgreSQL database. Can be developed locally with Docker Compose and then
     deployed to Azure Container Apps (using KeyVault SDK for Flask secrets).
   annotations:
@@ -2457,22 +2505,22 @@ metadata:
     awesome.azd/template: flask-surveys-container-app@0.0.2-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - flask
-  - keyvault
-  - aca
-  - webapps
-  - azuredb-postgresql
+    - python
+    - flask
+    - keyvault
+    - aca
+    - webapps
+    - azuredb-postgresql
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/flask-surveys-container-app
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-surveys-container-app.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/flask-surveys-container-app
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-surveys-container-app.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2493,27 +2541,28 @@ metadata:
   name: simple-flask-container-app
   namespace: awesome-azd
   title: Flask API on Azure Container Apps
-  description: A simple JSON API using the Python Flask framework, designed for deployment
+  description: |
+    A simple JSON API using the Python Flask framework, designed for deployment
     on Azure Container Apps.
   annotations:
     github.com/project-slug: pamelafox/simple-flask-api-container
     awesome.azd/template: simple-flask-container-app@0.0.1-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - bicep
-  - aca
-  - flask
+    - python
+    - bicep
+    - aca
+    - flask
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/simple-flask-api-container
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-flask-api-container.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/simple-flask-api-container
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-flask-api-container.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2534,7 +2583,8 @@ metadata:
   name: fastapi-azure-function-apim
   namespace: awesome-azd
   title: FastAPI with API Management
-  description: A FastAPI app deployed as a secured Azure Function with an API Management
+  description: |
+    A FastAPI app deployed as a secured Azure Function with an API Management
     Policy in front, set up such that API calls require a subscription key but auto-generated
     documentation is publicly viewable. Project also includes 100% test coverage with
     Pytest plus a development workflow with ruff, isort, and black.
@@ -2543,20 +2593,20 @@ metadata:
     awesome.azd/template: fastapi-azure-function-apim@0.0.1-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - fastapi
-  - functions
-  - apim
+    - python
+    - fastapi
+    - functions
+    - apim
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/fastapi-azure-function-apim
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/fastapi-azure-function-apim.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/fastapi-azure-function-apim
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/fastapi-azure-function-apim.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2577,7 +2627,8 @@ metadata:
   name: flask-charts-api-container-app
   namespace: awesome-azd
   title: Flask Chart API on ACA and CDN
-  description: A Charts API that renders PNGs of bar and pie charts, built with Python
+  description: |
+    A Charts API that renders PNGs of bar and pie charts, built with Python
     Flask, APIFlask, and matplotlib. Can be run locally with Docker and then deployed
     to Azure Container Apps with an Azure CDN in front.
   annotations:
@@ -2585,21 +2636,21 @@ metadata:
     awesome.azd/template: flask-charts-api-container-app@0.0.2-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - flask
-  - webapps
-  - aca
-  - azurecdn
+    - python
+    - flask
+    - webapps
+    - aca
+    - azurecdn
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/flask-charts-api-container-app
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-cdn-container-app.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/flask-charts-api-container-app
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-cdn-container-app.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2620,28 +2671,29 @@ metadata:
   name: staticmaps-fastapi-function
   namespace: awesome-azd
   title: Static Maps API Function and CDN
-  description: A FastAPI app that renders map images for the given location. Deployed
+  description: |
+    A FastAPI app that renders map images for the given location. Deployed
     as a secured Azure function with an Azure CDN in front for caching.
   annotations:
     github.com/project-slug: pamelafox/staticmaps-function
     awesome.azd/template: staticmaps-fastapi-function@0.0.1-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - functions
-  - fastapi
-  - monitor
-  - azurecdn
+    - python
+    - functions
+    - fastapi
+    - monitor
+    - azurecdn
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/staticmaps-function
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/staticmaps-function.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/staticmaps-function
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/staticmaps-function.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2662,29 +2714,30 @@ metadata:
   name: python-mercury-notebooks-azd
   namespace: awesome-azd
   title: Jupyter Notebooks Web App on Azure Container Apps
-  description: A web application used for hosting, sharing, and interacting with Jupyter
+  description: |
+    A web application used for hosting, sharing, and interacting with Jupyter
     Notebooks via Mercury, hosted on Azure Container Apps.
   annotations:
     github.com/project-slug: savannahostrowski/jupyter-mercury-aca
     awesome.azd/template: python-mercury-notebooks-azd@0.0.1-beta
     awesome.azd/author: Savannah Ostrowski
   tags:
-  - python
-  - bicep
-  - webapps
-  - aca
-  - jupyter
-  - datascience
+    - python
+    - bicep
+    - webapps
+    - aca
+    - jupyter
+    - datascience
   links:
-  - url: https://github.com/savannahostrowski
-    title: Website
-    icon: help
-  - url: https://github.com/savannahostrowski/jupyter-mercury-aca
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/jupyter-mercury-aca.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/savannahostrowski
+      title: Website
+      icon: help
+    - url: https://github.com/savannahostrowski/jupyter-mercury-aca
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/jupyter-mercury-aca.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2706,7 +2759,8 @@ metadata:
   name: django-quiz-app
   namespace: awesome-azd
   title: Python (Django) Web App with PostgreSQL and Key Vault
-  description: A Python Django app on App Service with a PostgreSQL flexible server
+  description: |
+    A Python Django app on App Service with a PostgreSQL flexible server
     database. Database access is restricted to Azure IPs, and all administrative secrets
     are stored in Key Vault.
   annotations:
@@ -2714,23 +2768,23 @@ metadata:
     awesome.azd/template: django-quiz-app@0.0.1-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - django
-  - webapps
-  - appservice
-  - bicep
-  - azuredb-postgresql
-  - keyvault
+    - python
+    - django
+    - webapps
+    - appservice
+    - bicep
+    - azuredb-postgresql
+    - keyvault
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/django-quiz-app
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/django-quiz-app.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/django-quiz-app
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/django-quiz-app.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2751,7 +2805,8 @@ metadata:
   name: reliable-csharp-web
   namespace: awesome-azd
   title: Reliable Web App Pattern for .NET
-  description: A multi-region enterprise web app with a 99.9% SLO and a focus on 12-factor
+  description: |
+    A multi-region enterprise web app with a 99.9% SLO and a focus on 12-factor
     apps and the well-architected framework. The sample app creates a concert booking
     application.
   annotations:
@@ -2759,26 +2814,26 @@ metadata:
     awesome.azd/template: reliable-csharp-web@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dotnetcsharp
-  - bicep
-  - appservice
-  - keyvault
-  - frontdoor
-  - azuresql
-  - appinsights
-  - blobstorage
-  - webapps
-  - enterprisepatterns
+    - dotnetcsharp
+    - bicep
+    - appservice
+    - keyvault
+    - frontdoor
+    - azuresql
+    - appinsights
+    - blobstorage
+    - webapps
+    - enterprisepatterns
   links:
-  - url: https://github.com/Azure
-    title: Website
-    icon: help
-  - url: https://github.com/Azure/reliable-web-app-pattern-dotnet
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/reliable-web-app-for-dotnet.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure
+      title: Website
+      icon: help
+    - url: https://github.com/Azure/reliable-web-app-pattern-dotnet
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/reliable-web-app-for-dotnet.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2803,7 +2858,8 @@ metadata:
   name: simple-fastapi-container-app
   namespace: awesome-azd
   title: FastAPI on Azure Container Apps
-  description: A simple JSON API using the Python FastAPI app framework, designed
+  description: |
+    A simple JSON API using the Python FastAPI app framework, designed
     for deployment on Azure Container Apps. Includes auto-configuration of gunicorn
     with uvicorn worker count based on CPUs available.
   annotations:
@@ -2811,20 +2867,20 @@ metadata:
     awesome.azd/template: simple-fastapi-container-app@0.0.1
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - fastapi
-  - bicep
-  - aca
+    - python
+    - fastapi
+    - bicep
+    - aca
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/simple-fastapi-container
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-fastapi-container.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/simple-fastapi-container
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-fastapi-container.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2845,7 +2901,8 @@ metadata:
   name: aks-app-template
   namespace: awesome-azd
   title: Containerized Apps on Azure Kubernetes Service
-  description: A base Azure Kubernetes Service template with placeholders to include
+  description: |
+    A base Azure Kubernetes Service template with placeholders to include
     the application source code (no application source code included) and Kubernetes
     manifest files.
   annotations:
@@ -2853,22 +2910,22 @@ metadata:
     awesome.azd/template: aks-app-template@0.0.1-beta
     awesome.azd/author: Ahmed Sabbour
   tags:
-  - bicep
-  - aks
-  - kubernetes
-  - keda
-  - grafana
-  - prometheus
+    - bicep
+    - aks
+    - kubernetes
+    - keda
+    - grafana
+    - prometheus
   links:
-  - url: https://github.com/sabbour/
-    title: Website
-    icon: help
-  - url: https://github.com/sabbour/aks-app-template
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/basic-aks-template.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/sabbour/
+      title: Website
+      icon: help
+    - url: https://github.com/sabbour/aks-app-template
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/basic-aks-template.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2906,7 +2963,8 @@ metadata:
   name: react-toolkit-azd-template
   namespace: awesome-azd
   title: 'React Component Toolkit with ChatGPT and OpenAI '
-  description: A sample demo for building and testing react components and includes
+  description: |
+    A sample demo for building and testing react components and includes
     a set of unique features including AI component generation and automatic conversion
     to Azure APIM Widgets
   annotations:
@@ -2914,24 +2972,24 @@ metadata:
     awesome.azd/template: react-toolkit-azd-template@0.0.1
     awesome.azd/author: Jenny Chen
   tags:
-  - bicep
-  - openai
-  - chatgpt
-  - ai
-  - apim
-  - reactjs
-  - typescript
-  - javascript
+    - bicep
+    - openai
+    - chatgpt
+    - ai
+    - apim
+    - reactjs
+    - typescript
+    - javascript
   links:
-  - url: https://github.com/Azure-Samples
-    title: Website
-    icon: help
-  - url: https://github.com/Azure-Samples/react-component-toolkit-openai-demo
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/react-component-toolkit-openai.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/Azure-Samples
+      title: Website
+      icon: help
+    - url: https://github.com/Azure-Samples/react-component-toolkit-openai-demo
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/react-component-toolkit-openai.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2953,7 +3011,8 @@ metadata:
   name: flask-db-quiz-example
   namespace: awesome-azd
   title: Python (Flask) Web App with PostgreSQL
-  description: A Python Flask app on App Service with a PostgreSQL flexible server
+  description: |
+    A Python Flask app on App Service with a PostgreSQL flexible server
     database. Database access is restricted to Azure IPs, and admin password is generated
     randomly
   annotations:
@@ -2961,22 +3020,22 @@ metadata:
     awesome.azd/template: flask-db-quiz-example@0.0.1-beta
     awesome.azd/author: Pamela Fox
   tags:
-  - python
-  - flask
-  - bicep
-  - appservice
-  - webapps
-  - azuredb-postgresql
+    - python
+    - flask
+    - bicep
+    - appservice
+    - webapps
+    - azuredb-postgresql
   links:
-  - url: https://github.com/pamelafox
-    title: Website
-    icon: help
-  - url: https://github.com/pamelafox/flask-db-quiz-example
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-db-quiz-example.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pamelafox
+      title: Website
+      icon: help
+    - url: https://github.com/pamelafox/flask-db-quiz-example
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/flask-db-quiz-example.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -2997,27 +3056,28 @@ metadata:
   name: servicebus-dotnet-functionapp
   namespace: awesome-azd
   title: DotNet Function App with Service Bus
-  description: A sample that uses a C# Function App with native Service Bus bindings
+  description: |
+    A sample that uses a C# Function App with native Service Bus bindings
     to both add and react to Queued Messages
   annotations:
     github.com/project-slug: Gordonby/servicebus-dotnet-functionapp
     awesome.azd/template: servicebus-dotnet-functionapp@0.0.1-beta
     awesome.azd/author: Gordon Byers
   tags:
-  - dotnetcsharp
-  - functions
-  - bicep
-  - servicebus
+    - dotnetcsharp
+    - functions
+    - bicep
+    - servicebus
   links:
-  - url: https://github.com/gordonby
-    title: Website
-    icon: help
-  - url: https://github.com/Gordonby/servicebus-dotnet-functionapp
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/servicebus-dotnet-functionapp.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/gordonby
+      title: Website
+      icon: help
+    - url: https://github.com/Gordonby/servicebus-dotnet-functionapp
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/servicebus-dotnet-functionapp.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -3038,29 +3098,30 @@ metadata:
   name: PyHAT-Musicbinder
   namespace: awesome-azd
   title: FastAPI, htmx, TailwindCSS on App Service
-  description: A sample web app using FastAPI, htmx, and TailwindCSS that demonstrates
+  description: |
+    A sample web app using FastAPI, htmx, and TailwindCSS that demonstrates
     dynamic design. Does not require a database provision.
   annotations:
     github.com/project-slug: tataraba/musicbinder-azd
     awesome.azd/template: PyHAT-Musicbinder@0.0.1-beta
     awesome.azd/author: Mario Munoz
   tags:
-  - fastapi
-  - python
-  - appservice
-  - webapps
-  - loganalytics
-  - bicep
+    - fastapi
+    - python
+    - appservice
+    - webapps
+    - loganalytics
+    - bicep
   links:
-  - url: https://github.com/tataraba
-    title: Website
-    icon: help
-  - url: https://github.com/tataraba/musicbinder-azd
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/fastapi-apps-loganalytics.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/tataraba
+      title: Website
+      icon: help
+    - url: https://github.com/tataraba/musicbinder-azd
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/fastapi-apps-loganalytics.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -3081,26 +3142,27 @@ metadata:
   name: simple-streamlit-webapp
   namespace: awesome-azd
   title: Simple Streamlit
-  description: A tiny, no-frills, template to deploy Python's Streamlit web framework
+  description: |
+    A tiny, no-frills, template to deploy Python's Streamlit web framework
     to Azure App Service in the free tier.
   annotations:
     github.com/project-slug: MiguelElGallo/simple-streamlit-azd
     awesome.azd/template: simple-stremamlit-webapp@0.0.1-beta
     awesome.azd/author: Miguel P. Z.
   tags:
-  - python
-  - appservice
-  - streamlit
+    - python
+    - appservice
+    - streamlit
   links:
-  - url: https://github.com/MiguelElGallo
-    title: Website
-    icon: help
-  - url: https://github.com/MiguelElGallo/simple-streamlit-azd
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-flask-azd.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/MiguelElGallo
+      title: Website
+      icon: help
+    - url: https://github.com/MiguelElGallo/simple-streamlit-azd
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/simple-flask-azd.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -3121,30 +3183,31 @@ metadata:
   name: ais-apim-openai
   namespace: awesome-azd
   title: Azure API Management with Azure OpenAI
-  description: Unleash the power of Azure OpenAI to your application developers in
+  description: |
+    Unleash the power of Azure OpenAI to your application developers in
     a secure & manageable way with Azure API Management.
   annotations:
     github.com/project-slug: pascalvanderheiden/ais-apim-openai
     awesome.azd/template: ais-apim-openai@1.0.0
     awesome.azd/author: Pascal van der Heiden
   tags:
-  - bicep
-  - apim
-  - openai
-  - appinsights
-  - monitor
-  - enterprisepatterns
-  - keyvault
+    - bicep
+    - apim
+    - openai
+    - appinsights
+    - monitor
+    - enterprisepatterns
+    - keyvault
   links:
-  - url: https://github.com/pascalvanderheiden
-    title: Website
-    icon: help
-  - url: https://github.com/pascalvanderheiden/ais-apim-openai
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/apim-openai.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/pascalvanderheiden
+      title: Website
+      icon: help
+    - url: https://github.com/pascalvanderheiden/ais-apim-openai
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/apim-openai.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
@@ -3160,26 +3223,27 @@ metadata:
   name: docusaurus-aca
   namespace: awesome-azd
   title: Docusaurus with Azure Container Apps
-  description: A blueprint to easily and quickly create and deploy your product documentation
+  description: |
+    A blueprint to easily and quickly create and deploy your product documentation
     in Docusaurus using Azure Container Apps.
   annotations:
     github.com/project-slug: jsburckhardt/docusaurus-aca
     awesome.azd/template: docusaurus-aca@0.0.1-beta
     awesome.azd/author: Juan Burckhardt
   tags:
-  - javascript
-  - aca
-  - bicep
+    - javascript
+    - aca
+    - bicep
   links:
-  - url: https://github.com/jsburckhardt
-    title: Website
-    icon: help
-  - url: https://github.com/jsburckhardt/docusaurus-aca
-    title: Source
-    icon: github
-  - url: https://github.com/Azure/awesome-azd/website/static/templates/images/docusaurus-aca-template.png
-    title: Preview
-    icon: docs
+    - url: https://github.com/jsburckhardt
+      title: Website
+      icon: help
+    - url: https://github.com/jsburckhardt/docusaurus-aca
+      title: Source
+      icon: github
+    - url: https://github.com/Azure/awesome-azd/website/static/templates/images/docusaurus-aca-template.png
+      title: Preview
+      icon: docs
 spec:
   type: website
   lifecycle: experimental
