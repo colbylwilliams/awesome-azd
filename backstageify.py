@@ -29,11 +29,9 @@ def azure_yaml_path(source: str) -> str:
 def normalize_entity_name(name: str) -> str:
     clean = re.sub(r'[^a-zA-Z0-9_\-\.]', '-', name.strip().lower())
 
-    # invalid to end with _
     while clean.endswith('_'):
         clean = clean[:-1]
 
-    # cleans up format for groups like 'my group (Reader)'
     clean = clean.replace('__', '_')
 
     if len(clean) > 63:
@@ -41,7 +39,17 @@ def normalize_entity_name(name: str) -> str:
 
     return clean
 
+def clean_tag(tag: str) -> str:
+    clean = re.sub(r'[^a-z0-9\-\.]', '-', tag.strip().lower())
+
+    if len(clean) > 63:
+        clean = clean[:63]
+
+    return clean
+
+
 print('Fetching templates...')
+
 templates = requests.get(INDEX_URL).json()
 
 print()
@@ -101,7 +109,7 @@ for template, azure in pairs:
                 'awesome.azd/template': azure['metadata']['template'],
                 'awesome.azd/author': template['author'],
             },
-            'tags': template['tags'],
+            'tags': [ clean_tag(tag) for tag in template['tags'] ],
             'links': [
                 {
                     'url': template['website'],

@@ -73,7 +73,7 @@ metadata:
     awesome.azd/author: Azure Dev
   tags:
   - featured
-  - dotnetCsharp
+  - dotnetcsharp
   - typescript
   - javascript
   - appservice
@@ -127,7 +127,7 @@ metadata:
     awesome.azd/author: Brady Gaster
   tags:
   - featured
-  - dotnetCsharp
+  - dotnetcsharp
   - cosmosdb
   - aca
   - bicep
@@ -212,7 +212,7 @@ metadata:
   - featured
   - django
   - python
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - webapps
   - vnets
   - bicep
@@ -750,7 +750,7 @@ metadata:
   tags:
   - featured
   - bicep
-  - dotnetCsharp
+  - dotnetcsharp
   - typescript
   - javascript
   - appservice
@@ -920,7 +920,7 @@ metadata:
   - bicep
   - swa
   - functions
-  - dotnetCsharp
+  - dotnetcsharp
   - typescript
   - javascript
   - monitor
@@ -1062,7 +1062,7 @@ metadata:
   - spring
   - webapps
   - azurespringapps
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   links:
   - url: https://github.com/Azure-Samples/
     title: Website
@@ -1158,7 +1158,7 @@ metadata:
   tags:
   - featured
   - bicep
-  - dotnetCsharp
+  - dotnetcsharp
   - aks
   - kubernetes
   - aca
@@ -1352,7 +1352,7 @@ metadata:
   - aca
   - keyvault
   - blobstorage
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - cosmosdb
   - apim
   - enterprisepatterns
@@ -1432,7 +1432,7 @@ metadata:
   - python
   - django
   - webapps
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - appservice
   - vnets
   links:
@@ -1476,7 +1476,7 @@ metadata:
   - python
   - django
   - aca
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - bicep
   links:
   - url: https://github.com/Azure-Samples
@@ -1522,7 +1522,7 @@ metadata:
   tags:
   - python
   - webapps
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - appservice
   - vnets
   - flask
@@ -1564,7 +1564,7 @@ metadata:
     awesome.azd/author: Azure Content Team
   tags:
   - bicep
-  - dotnetCsharp
+  - dotnetcsharp
   - aca
   - dapr
   - servicebus
@@ -1716,8 +1716,8 @@ metadata:
     awesome.azd/author: Azure Content Team
   tags:
   - dapr
-  - dotnetCsharp
-  - azuredb-postgreSQL
+  - dotnetcsharp
+  - azuredb-postgresql
   - aca
   links:
   - url: https://github.com/Azure-Samples
@@ -1761,7 +1761,7 @@ metadata:
   tags:
   - dapr
   - python
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - aca
   links:
   - url: https://github.com/Azure-Samples
@@ -1805,7 +1805,7 @@ metadata:
   tags:
   - dapr
   - nodejs
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - javascript
   - aca
   links:
@@ -1942,7 +1942,7 @@ metadata:
     awesome.azd/author: Azure Content Team
   tags:
   - dapr
-  - dotnetCsharp
+  - dotnetcsharp
   - aca
   links:
   - url: https://github.com/Azure-Samples
@@ -2243,7 +2243,7 @@ metadata:
     awesome.azd/template: servicebus-csharp-function-dataverse@0.1.0
     awesome.azd/author: Raphael Pothin
   tags:
-  - dotnetCsharp
+  - dotnetcsharp
   - functions
   - servicebus
   - monitor
@@ -2328,7 +2328,7 @@ metadata:
     awesome.azd/author: Paul Yuknewicz
   tags:
   - functions
-  - dotnetCsharp
+  - dotnetcsharp
   - azureai
   - bicep
   - ai
@@ -2462,7 +2462,7 @@ metadata:
   - keyvault
   - aca
   - webapps
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   links:
   - url: https://github.com/pamelafox
     title: Website
@@ -2719,7 +2719,7 @@ metadata:
   - webapps
   - appservice
   - bicep
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   - keyvault
   links:
   - url: https://github.com/pamelafox
@@ -2759,7 +2759,7 @@ metadata:
     awesome.azd/template: reliable-csharp-web@0.0.1-beta
     awesome.azd/author: Azure Content Team
   tags:
-  - dotnetCsharp
+  - dotnetcsharp
   - bicep
   - appservice
   - keyvault
@@ -2966,7 +2966,7 @@ metadata:
   - bicep
   - appservice
   - webapps
-  - azuredb-postgreSQL
+  - azuredb-postgresql
   links:
   - url: https://github.com/pamelafox
     title: Website
@@ -3004,7 +3004,7 @@ metadata:
     awesome.azd/template: servicebus-dotnet-functionapp@0.0.1-beta
     awesome.azd/author: Gordon Byers
   tags:
-  - dotnetCsharp
+  - dotnetcsharp
   - functions
   - bicep
   - servicebus
