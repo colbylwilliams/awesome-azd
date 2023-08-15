@@ -139,7 +139,7 @@ for azd, azure in pairs:
     # entities.append(component)
 
     template = {
-        'apiVersion': 'backstage.io/v1beta2',
+        'apiVersion': 'scaffolder.backstage.io/v1beta3',
         'kind': 'Template',
         'metadata': {
             'name': azure['name'],

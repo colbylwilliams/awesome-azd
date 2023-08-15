@@ -14,7 +14,7 @@ spec:
   memberOf:
   - awesome-azd
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: app-template-wordpress
@@ -57,7 +57,7 @@ spec:
     metadata:
       template: apptemplate-wordpress-on-ACA@0.0.1-beta
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-csharp-cosmos-sql
@@ -114,7 +114,7 @@ spec:
         language: csharp
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: RockPaperOrleans
@@ -199,7 +199,7 @@ spec:
           path: ./Dockerfile
           context: ../
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: pycon-django-workshop
@@ -244,7 +244,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-nodejs-mongo
@@ -302,7 +302,7 @@ spec:
         language: js
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-nodejs-mongo-swa-func
@@ -374,7 +374,7 @@ spec:
         language: js
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-python-mongo-swa-func
@@ -446,7 +446,7 @@ spec:
         language: py
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-python-mongo-terraform
@@ -508,7 +508,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-nodejs-mongo-terraform
@@ -569,7 +569,7 @@ spec:
     infra:
       provider: terraform
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-python-mongo
@@ -628,7 +628,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-nodejs-mongo-aca
@@ -687,7 +687,7 @@ spec:
         language: js
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-python-mongo-aca
@@ -744,7 +744,7 @@ spec:
         language: python
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-csharp-sql
@@ -801,7 +801,7 @@ spec:
         language: csharp
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-java-mongo
@@ -858,7 +858,7 @@ spec:
         language: java
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-java-mongo-aca
@@ -914,7 +914,7 @@ spec:
         language: java
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-csharp-sql-swa-func
@@ -985,7 +985,7 @@ spec:
         language: dotnet
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: todo-nodejs-mongo-aks
@@ -1055,7 +1055,7 @@ spec:
             shell: sh
             run: azd env set REACT_APP_API_BASE_URL ${SERVICE_API_ENDPOINT_URL}
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: asa-samples-web-application
@@ -1115,7 +1115,7 @@ spec:
               shell: sh
               run: cd ..;./mvnw clean install -N;cd client;../mvnw clean install
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: openai-plugin-fastapi
@@ -1161,7 +1161,7 @@ spec:
         host: containerapp
         language: python
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: azure-search-openai-demo-csharp
@@ -1227,7 +1227,7 @@ spec:
           interactive: true
           continueOnError: false
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: simple-chatgpt-python
@@ -1285,7 +1285,7 @@ spec:
           interactive: true
           continueOnError: false
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: spring-chatgpt-sample
@@ -1353,7 +1353,7 @@ spec:
               run: cd ..;./mvnw.cmd clean install -N;cd spring-chatgpt-sample-common;../mvnw.cmd
                 clean install
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: contoso-real-estate
@@ -1438,7 +1438,7 @@ spec:
           context: ../..
         module: app/stripe
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: django-postgresql-sample-app
@@ -1483,7 +1483,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: azure-django-postgres-flexible-aca
@@ -1530,7 +1530,7 @@ spec:
         language: py
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: flask-postgresql-sample-app
@@ -1576,7 +1576,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: pubsub-dapr-csharp-servicebus
@@ -1627,7 +1627,7 @@ spec:
         host: containerapp
         module: app/subscriber
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: pubsub-dapr-python-servicebus-aca
@@ -1678,7 +1678,7 @@ spec:
         host: containerapp
         module: app/subscriber
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: pubsub-dapr-javascript-servicebus-aca
@@ -1729,7 +1729,7 @@ spec:
         host: containerapp
         module: app/subscriber
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: bindings-dapr-csharp-postgres-aca
@@ -1774,7 +1774,7 @@ spec:
         host: containerapp
         module: app/api
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: bindings-dapr-node-postgres-aca
@@ -1819,7 +1819,7 @@ spec:
         host: containerapp
         module: app/api
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: bindings-dapr-node-postgres-aca
@@ -1865,7 +1865,7 @@ spec:
         host: containerapp
         module: app/api
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: service-invoke-dapr-node-aca
@@ -1913,7 +1913,7 @@ spec:
         host: containerapp
         module: app/api
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: service-invoke-dapr-node-aca
@@ -1961,7 +1961,7 @@ spec:
         host: containerapp
         module: app/api
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: service-invoke-dapr-dotnet-aca
@@ -2009,7 +2009,7 @@ spec:
         host: containerapp
         module: app/api
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: azure-search-openai-demo
@@ -2079,7 +2079,7 @@ spec:
           interactive: true
           continueOnError: false
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: fastapi-on-azure-functions
@@ -2120,7 +2120,7 @@ spec:
         language: py
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: spring-petclinic
@@ -2169,7 +2169,7 @@ spec:
         language: java
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: asa-samples-event-driven-application
@@ -2216,7 +2216,7 @@ spec:
         spring:
           deploymentName: default
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: app-service-javascript-sap-cloud-sdk-quickstart
@@ -2269,7 +2269,7 @@ spec:
         language: ts
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: servicebus-csharp-function-dataverse
@@ -2314,7 +2314,7 @@ spec:
         language: csharp
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: simple-flask-webapp
@@ -2355,7 +2355,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: text-summzarize-csharp-ai-func
@@ -2399,7 +2399,7 @@ spec:
         language: dotnet
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: text-summzarize-python-ai-func
@@ -2444,7 +2444,7 @@ spec:
         language: python
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: simple-flask-container-app
@@ -2488,7 +2488,7 @@ spec:
         language: py
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: flask-surveys-container-app
@@ -2533,7 +2533,7 @@ spec:
         language: py
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: simple-flask-container-app
@@ -2575,7 +2575,7 @@ spec:
         language: py
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: fastapi-azure-function-apim
@@ -2619,7 +2619,7 @@ spec:
         language: py
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: flask-charts-api-container-app
@@ -2663,7 +2663,7 @@ spec:
         language: py
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: staticmaps-fastapi-function
@@ -2706,7 +2706,7 @@ spec:
         language: py
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: python-mercury-notebooks-azd
@@ -2751,7 +2751,7 @@ spec:
         language: python
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: django-quiz-app
@@ -2797,7 +2797,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: reliable-csharp-web
@@ -2850,7 +2850,7 @@ spec:
         language: csharp
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: simple-fastapi-container-app
@@ -2893,7 +2893,7 @@ spec:
         language: py
         host: containerapp
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: aks-app-template
@@ -2955,7 +2955,7 @@ spec:
     pipeline:
       provider: github
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: react-toolkit-azd-template
@@ -3003,7 +3003,7 @@ spec:
         interactive: true
         continueOnError: false
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: flask-db-quiz-example
@@ -3048,7 +3048,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: servicebus-dotnet-functionapp
@@ -3090,7 +3090,7 @@ spec:
         language: csharp
         host: function
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: PyHAT-Musicbinder
@@ -3134,7 +3134,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: simple-streamlit-webapp
@@ -3175,7 +3175,7 @@ spec:
         language: py
         host: appservice
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: ais-apim-openai
@@ -3215,7 +3215,7 @@ spec:
     metadata:
       template: ais-apim-openai@1.0.0
 ---
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: docusaurus-aca
