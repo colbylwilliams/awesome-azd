@@ -50,18 +50,18 @@ def clean_tag(tag: str) -> str:
 
 print('Fetching templates...')
 
-templates = requests.get(INDEX_URL).json()
+azd_templates = requests.get(INDEX_URL).json()
 
 print()
 
 pairs = []
 
-for template in templates:
-    print(f'Fetching azure.yaml for {template["title"]}...')
-    azure_text = requests.get(azure_yaml_path(template['source'])).text
+for azd in azd_templates:
+    print(f'Fetching azure.yaml for {azd["title"]}...')
+    azure_text = requests.get(azure_yaml_path(azd['source'])).text
     # azure = yaml.safe_load(azure_text)
     # template['azure'] = yaml.safe_load(azure)
-    pairs.append((template, yaml.safe_load(azure_text)))
+    pairs.append((azd, yaml.safe_load(azure_text)))
 
 entities = []
 
@@ -92,9 +92,9 @@ entities.append({
 
 print()
 
-for template, azure in pairs:
+for azd, azure in pairs:
 
-    print(f'Processing {template["title"]}...')
+    print(f'Processing {azd["title"]}...')
 
     component = {
         'apiVersion': 'backstage.io/v1alpha1',
@@ -102,27 +102,27 @@ for template, azure in pairs:
         'metadata': {
             'name': azure['name'],
             'namespace': 'awesome-azd',
-            'title': template['title'],
-            'description': template['description'],
+            'title': azd['title'],
+            'description': azd['description'],
             'annotations': {
-                'github.com/project-slug': template['source'].removeprefix('https://github.com/'),
+                'github.com/project-slug': azd['source'].removeprefix('https://github.com/'),
                 'awesome.azd/template': azure['metadata']['template'],
-                'awesome.azd/author': template['author'],
+                'awesome.azd/author': azd['author'],
             },
-            'tags': [ clean_tag(tag) for tag in template['tags'] ],
+            'tags': [ clean_tag(tag) for tag in azd['tags'] ],
             'links': [
                 {
-                    'url': template['website'],
+                    'url': azd['website'],
                     'title': 'Website',
                     'icon': 'help',
                 },
                 {
-                    'url': template['source'],
+                    'url': azd['source'],
                     'title': 'Source',
                     'icon': 'github',
                 },
                 {
-                    'url': f'https://github.com/Azure/awesome-azd/website/static/{template["preview"].removeprefix("./")}',
+                    'url': f'https://github.com/Azure/awesome-azd/website/static/{azd["preview"].removeprefix("./")}',
                     'title': 'Preview',
                     'icon': 'docs',
                 }
@@ -136,7 +136,53 @@ for template, azure in pairs:
         }
     }
 
-    entities.append(component)
+    # entities.append(component)
+
+    template = {
+        'apiVersion': 'backstage.io/v1beta2',
+        'kind': 'Template',
+        'metadata': {
+            'name': azure['name'],
+            'namespace': 'awesome-azd',
+            'title': azd['title'],
+            'description': azd['description'],
+            'annotations': {
+                'github.com/project-slug': azd['source'].removeprefix('https://github.com/'),
+                'awesome.azd/template': azure['metadata']['template'],
+                'awesome.azd/author': azd['author'],
+            },
+            'tags': [ clean_tag(tag) for tag in azd['tags'] ],
+            'links': [
+                {
+                    'url': azd['website'],
+                    'title': 'Website',
+                    'icon': 'help',
+                },
+                {
+                    'url': azd['source'],
+                    'title': 'Source',
+                    'icon': 'github',
+                },
+                {
+                    'url': f'https://github.com/Azure/awesome-azd/website/static/{azd["preview"].removeprefix("./")}',
+                    'title': 'Preview',
+                    'icon': 'docs',
+                }
+            ],
+        },
+        'spec': {
+            'type': 'website',
+            # 'lifecycle': 'experimental',
+            'owner': 'awesome-azd',
+            'parameters': [],
+            'steps': [],
+            'azure': azure
+        }
+    }
+
+    entities.append(template)
+
+
 
 
 # get the full path to the git executable
