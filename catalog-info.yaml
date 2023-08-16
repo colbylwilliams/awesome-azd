@@ -1,4 +1,3 @@
-
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
@@ -51,8 +50,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: app-template-wordpress
     metadata:
@@ -98,8 +122,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-csharp-cosmos-sql
     metadata:
@@ -147,8 +196,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: RockPaperOrleans
     metadata:
@@ -233,8 +307,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: pycon-django-workshop
     metadata:
@@ -286,8 +385,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-nodejs-mongo
     metadata:
@@ -346,8 +470,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-nodejs-mongo-swa-func
     metadata:
@@ -418,8 +567,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-python-mongo-swa-func
     metadata:
@@ -490,8 +664,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-python-mongo-terraform
     metadata:
@@ -551,8 +750,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-nodejs-mongo-terraform
     metadata:
@@ -612,8 +836,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-python-mongo
     metadata:
@@ -672,8 +921,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-nodejs-mongo-aca
     metadata:
@@ -729,8 +1003,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-python-mongo-aca
     metadata:
@@ -785,8 +1084,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-csharp-sql
     metadata:
@@ -842,8 +1166,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-java-mongo
     metadata:
@@ -899,8 +1248,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-java-mongo-aca
     metadata:
@@ -957,8 +1331,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-csharp-sql-swa-func
     metadata:
@@ -1028,8 +1427,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: todo-nodejs-mongo-aks
     metadata:
@@ -1094,8 +1518,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: asa-samples-web-application
     metadata:
@@ -1150,8 +1599,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: openai-plugin-fastapi
     metadata:
@@ -1201,8 +1675,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: azure-search-openai-demo-csharp
     metadata:
@@ -1262,8 +1761,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: simple-chatgpt-python
     metadata:
@@ -1320,8 +1844,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: spring-chatgpt-sample
     metadata:
@@ -1392,8 +1941,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: contoso-real-estate
     metadata:
@@ -1472,8 +2046,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: django-postgresql-sample-app
     metadata:
@@ -1516,8 +2115,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: azure-django-postgres-flexible-aca
     metadata:
@@ -1565,8 +2189,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: flask-postgresql-sample-app
     metadata:
@@ -1609,8 +2258,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: pubsub-dapr-csharp-servicebus
     metadata:
@@ -1660,8 +2334,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: pubsub-dapr-python-servicebus-aca
     metadata:
@@ -1712,8 +2411,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: pubsub-dapr-javascript-servicebus-aca
     metadata:
@@ -1762,8 +2486,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: bindings-dapr-csharp-postgres-aca
     metadata:
@@ -1807,8 +2556,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: bindings-dapr-node-postgres-aca
     metadata:
@@ -1853,8 +2627,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: bindings-dapr-node-postgres-aca
     metadata:
@@ -1896,8 +2695,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: service-invoke-dapr-node-aca
     metadata:
@@ -1944,8 +2768,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: service-invoke-dapr-node-aca
     metadata:
@@ -1992,8 +2841,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: service-invoke-dapr-dotnet-aca
     metadata:
@@ -2044,8 +2918,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: azure-search-openai-demo
     metadata:
@@ -2109,8 +3008,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: fastapi-on-azure-functions
     metadata:
@@ -2157,8 +3081,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: spring-petclinic
     metadata:
@@ -2203,8 +3152,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: asa-samples-event-driven-application
     metadata:
@@ -2256,8 +3230,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: app-service-javascript-sap-cloud-sdk-quickstart
     metadata:
@@ -2303,8 +3302,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: servicebus-csharp-function-dataverse
     metadata:
@@ -2344,8 +3368,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: simple-flask-webapp
     metadata:
@@ -2388,8 +3437,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: text-summzarize-csharp-ai-func
     metadata:
@@ -2433,8 +3507,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: text-summzarize-python-ai-func
     metadata:
@@ -2477,8 +3576,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: simple-flask-container-app
     metadata:
@@ -2522,8 +3646,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: flask-surveys-container-app
     metadata:
@@ -2564,8 +3713,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: simple-flask-container-app
     metadata:
@@ -2608,8 +3782,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: fastapi-azure-function-apim
     metadata:
@@ -2652,8 +3851,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: flask-charts-api-container-app
     metadata:
@@ -2695,8 +3919,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: staticmaps-fastapi-function
     metadata:
@@ -2739,8 +3988,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: python-mercury-notebooks-azd
     metadata:
@@ -2786,8 +4060,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: django-quiz-app
     metadata:
@@ -2835,8 +4134,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: reliable-csharp-web
     metadata:
@@ -2882,8 +4206,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: simple-fastapi-container-app
     metadata:
@@ -2927,8 +4276,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: aks-app-template
     metadata:
@@ -2991,8 +4365,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: react-toolkit-azd-template
     metadata:
@@ -3037,8 +4436,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: flask-db-quiz-example
     metadata:
@@ -3079,8 +4503,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: servicebus-dotnet-functionapp
     metadata:
@@ -3123,8 +4572,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: PyHAT-Musicbinder
     metadata:
@@ -3164,8 +4638,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: simple-streamlit-webapp
     metadata:
@@ -3209,8 +4708,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: ais-apim-openai
     metadata:
@@ -3245,8 +4769,33 @@ metadata:
 spec:
   type: website
   owner: awesome-azd
-  parameters: []
-  steps: []
+  parameters:
+  - title: Create new Application
+    type: object
+    required:
+    - name
+    - subscriptionId
+    - location
+    properties:
+      name:
+        title: Application Name
+        type: string
+        description: The name of the application to create.
+      subscriptionId:
+        title: Subscription ID
+        type: string
+        description: The Azure Subscription ID to use.
+      location:
+        title: Location
+        type: string
+        description: The Azure Region to use.
+  steps:
+  - id: log
+    name: Log
+    action: debug:log
+    input:
+      message: Creating Azure Application...
+      listWorkspace: true
   azure:
     name: docusaurus-aca
     metadata:

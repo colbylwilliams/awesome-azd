@@ -174,8 +174,41 @@ for azd, azure in pairs:
             'type': 'website',
             # 'lifecycle': 'experimental',
             'owner': 'awesome-azd',
-            'parameters': [],
-            'steps': [],
+            'parameters': [
+                {
+                    'title': 'Create new Application',
+                    'type': 'object',
+                    'required': [ 'name', 'subscriptionId', 'location' ],
+                    'properties': {
+                        'name': {
+                            'title': 'Application Name',
+                            'type': 'string',
+                            'description': 'The name of the application to create.',
+                        },
+                        'subscriptionId': {
+                            'title': 'Subscription ID',
+                            'type': 'string',
+                            'description': 'The Azure Subscription ID to use.',
+                        },
+                        'location': {
+                            'title': 'Location',
+                            'type': 'string',
+                            'description': 'The Azure Region to use.',
+                        },
+                    }
+                }
+            ],
+            'steps': [
+                {
+                    'id': 'log',
+                    'name': 'Log',
+                    'action': 'debug:log',
+                    'input': {
+                        'message': 'Creating Azure Application...',
+                        'listWorkspace': True,
+                    },
+                }
+            ],
             'azure': azure
         }
     }
